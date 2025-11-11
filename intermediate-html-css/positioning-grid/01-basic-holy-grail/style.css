@@ -10,8 +10,8 @@ html {
   padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr; /* header, content, footer */
-  grid-template-columns: 1fr 1fr 1fr; /* sidebar, main, nav/footer can use pixels too */
+  grid-template-rows: repeat(4, 1fr); /* header, content, footer */
+  grid-template-columns: repeat(3, 1fr); /* sidebar, main, nav/footer can use pixels too */
   grid-template-areas:
     "header header header"
     "sidebar nav nav"
